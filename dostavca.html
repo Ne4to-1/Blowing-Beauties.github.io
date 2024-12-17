@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление доставки</title>
+    <link rel="stylesheet" href="style/dostavca.css">
+</head>
+<body id="deliveryPage">
+    <div class="vernytsa">
+        <a href="osnova.html"><p>← Вернуться </p></a>
+    </div>
+
+    <div class="zag">
+        <h1>Оформление доставки</h1>
+    </div>
+
+    <div class="cart" id="cartItems">
+        <h2>Товары в корзине:</h2>
+        <div id="cartItems"></div>
+    </div>
+
+    <strong class="itog">Итого: <span id="totalPrice">0</span> руб.</strong>
+
+    <form id="deliveryForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="comments">Комментарии:</label>
+        <textarea id="comments" rows="4"></textarea>
+
+        <button  type="submit">Заказать доставку</button>
+    </form>
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/dostavca.js" type="text/javascript"></script>
+</body>
+</html>
